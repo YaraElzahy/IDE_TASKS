@@ -171,6 +171,9 @@ p{
 .column{
     flex: 33.33%;
 }
+.images_container .row .column img:hover{
+    opacity: 0.8;
+}
 .download_container{
     background-color: #343a40;
     align-items: flex-start;
