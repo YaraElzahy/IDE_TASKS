@@ -1,0 +1,203 @@
+body{
+    font-family: "Merriweather", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+#show_bg_image{
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(https://startbootstrap.github.io/startbootstrap-creative/assets/img/bg-masthead.jpg);
+    background-image: linear-gradient(rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(https://startbootstrap.github.io/startbootstrap-creative/assets/img/bg-masthead.jpg);  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    padding: 16rem;
+}
+p{
+    font-weight: normal;
+    font-size: 1rem; /* 1rem = 16px; */
+    font-style: italic;
+    /*font-variant: small-caps;*/
+}
+.container{
+    /*width: 80%;*/
+    margin: -240px auto; /* 0-> mn fo2 w ta7t 0; auto-> centered fel x direction*/
+}
+
+.navbar-brand{
+    color: rgba(236, 236, 236, 0.911);
+    margin-left: -130px;
+}
+.navbar-brand:hover{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(236, 236, 236, 0.911);
+    padding: 0px 5px;
+}
+a:hover{
+    color:white;
+}
+a:active{
+    color:#eb4f24f5;
+}
+ul{
+   /* list-style-image: url('heart.png');*/ 
+   list-style-position: inside;
+   list-style: square outside url('coffee-shop.png');
+   list-style: none;
+   float: right;
+   margin-top: -16px;
+   padding: 0px -10px;
+   margin-right: -140px;
+}
+ul li{
+    display: inline-block;
+}
+.clearfix{
+    clear: both;
+}
+header{
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+}
+h1{
+    position: relative;
+    display: block;
+    text-align: Center;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.2;
+    color: white;
+    box-sizing: border-box;
+    margin-top: -350px;
+}
+.orange_hr{
+    background-color: #eb4f24f5;
+    color: #eb4f24f5;
+    border-color: #eb4f24f5;
+    height: 1px;
+    width: 5%;
+}
+p{
+    color: rgba(236, 236, 236, 0.815);
+    font-weight: light;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-style: normal;
+}
+#orange_button{
+    padding: 1rem 2rem;
+    background-color: #F4623A;
+    color: #ffffff; 
+    border: none;
+    border-radius: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+#orange_button:hover{
+    background-color: #eb4f24f5;
+}
+.about_container{
+    background-color: #eb4f24f5;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 28rem;
+    margin-top: 19rem;
+}
+.white_h2{
+    position: relative;
+    display: block;
+    text-align: Center;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.2;
+    color: white;
+    box-sizing: border-box;
+    padding-top: 100px;
+}
+.white_hr{
+    background-color: #fff;
+    color: #fff;
+    border-color: #fff;
+    height: 1px;
+    width: 5%;
+}
+.white_button{
+    padding: 1rem 2rem;
+    background-color: #fff;
+    color: #212529; 
+    border: none;
+    border-radius: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+.white_button:hover{
+    background-color: rgba(236, 236, 236, 0.815);
+}
+.black_h2{
+    position: relative;
+    display: block;
+    text-align: Center;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 2;
+    color: #000;
+    box-sizing: border-box;
+    padding-top: 100px;
+}
+
+.icon_container{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    padding-top: 70px;
+    margin-left: 71px;
+    height: 20rem;
+}
+.icon-description{
+    color: grey;
+    text-align: center;
+    font-size: 15px;
+}
+.images_container{
+    box-sizing: border-box;
+}
+.row{
+    display: flex;
+}
+.column{
+    flex: 33.33%;
+}
+.download_container{
+    background-color: #343a40;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    height: 20rem;
+    margin-top: -30.3px;
+}
+.contact_container{
+    justify-content: center;
+    text-align: center;
+}
+#mail:hover{
+    text-decoration: underline;
+}
+
+footer{
+    font-size: 10;
+    color: #212529;
+    text-align: center;
+    margin-top: 0px;
+}
+.contact_icons{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    padding-top: 70px;
+    margin-left: 71px;
+    height: 15rem;
+}

@@ -1,0 +1,83 @@
+hr {
+    width: 5%;
+    color: rgb(255, 60, 0)ed;
+    background-color: rgb(255, 60, 0)red;
+    height: 1px;
+  }
+h1 {
+  color: white;
+  font-family: cursive;
+  font-size: 300%;
+  font-weight: bold;
+  text-align: Center; 
+  padding: 150px 150px
+}
+
+body {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS7QERD3IkFbU10l43P-bzFKf-R-_KvECOSBg&usqp=CAU');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  margin: 0;
+  background-color: rgb(255, 60, 0);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.homepagebody{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*The black background part*/
+/* .input-border{ 
+background-color: transparent;
+display: flex; 
+padding: 30px 80px;
+margin-left: 390px;
+width: 30%;
+border: none;
+box-shadow: 0 10px 20px rgba(0, 0, 0,0.65);
+height: 50px;
+border-radius: 10px;
+}*/
+p {
+   text-align: center;
+   color: white;
+}
+header {
+    float: right;
+
+}
+.topnav li{
+    float: left;
+}
+
+.topnav a{
+    float: right;
+    color:#f2f2f2;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: -32px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover{
+    background-color: rgb(255, 60, 0);
+    color: white;
+}
+.topnav a.active{
+  background-color: rgba(66, 184, 72, 0.575);
+  opacity: 0.95;
+}
+input{
+    background-color:rgb(255, 60, 0);
+    border-color: transparent; 
+    margin-left: 750px; 
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 20px 20px 20px 20px;
+}
+footer {
+  background-color: rgb(255, 60, 0);
+}
