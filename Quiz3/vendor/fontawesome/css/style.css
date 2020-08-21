@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 body,html{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Courgette', cursive;
     line-height: 1.7rem;
 }
 a{
@@ -29,8 +29,8 @@ ul{
 .text-center{
     text-align: center;
 }
-.bg-dark{
-    background-color: #2F2F2F;
+.navbar-bg{
+    background-color: #443345;
 }
 .bg-primary{
     background-color: rgba(61, 28, 61, 0.76);
@@ -55,19 +55,25 @@ ul{
     font-weight: bold;
 }.navbar .nav-items .links ul li{
     display: inline-block;
-    padding: 0 8px;
+    padding: 0 11px;
 }
 .navbar .nav-items .links ul li a:hover{
-    background-color:rgb(149, 82, 149);
-    text-decoration: underline red ;
+    background-color:#665567;
+    display: inline;
+    border-bottom: 2px solid #EF223C;
+    padding-top: 1.2rem;
+    padding-bottom: 1.4rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
 }
+
 .text-red{
     color: red;
     border-color: red;
 }
 .showcase{
-    height: 695px;
-    background-image: url('https://htbm.info/wp/wp-content/uploads/2017/02/accessories-men-660x330.jpg');
+    height: 670px;
+    background-image: linear-gradient(to bottom, rgba(26, 16, 24, 0.52), rgba(10, 1, 9, 0.73)), url('https://i.redd.it/xpx8k93n84o01.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -77,39 +83,57 @@ ul{
 }
 .showcase .subheading{
     font-size: 1rem;
-    word-spacing: 8px;
-    font-style: italic;
+    word-spacing: 3px;
+    font-style: normal;
     padding: 20px 0;
     text-shadow: 1px 1px 1px #fff;
     font-weight: normal;
 }
 em{
-    color: red;
-    border-color: red;
+    color: #EF223C;
+    border-color: #EF223C;
+    font-style: normal;
 }
 .showcase .showcase-text hr ,
 .services hr,
-.about hr ,
-.portofolio hr,
+.testimonials hr,
+.updates hr,
+.about hr,
+.about-us hr,
 .contact hr{
-    width: 5%;
-    margin: 10px auto;
-    border: 4px solid #FED136;
+    width: 19%;
+    margin: 5px auto;
+    border: 2px solid #EF223C;
+    color: #EF223C;
 }
+.about-us .container h2{
+    margin-bottom: 1rem;
+    margin-top: -1rem;
+}
+.updates hr{
+    width: 30%;
+    margin-left: 6rem;
+}
+
+.testimonials hr{
+    width: 28%;
+}
+
+
 .showcase .showcase-text .mashead-heading{
-    font-size: 3rem;
+    font-size: 3.5rem;
     word-spacing: 12px;
     font-weight: bold;
-    text-transform: uppercase;
-    padding: 40px 0;
+    padding: 40px 0px;
+    padding-bottom: 3px;
     text-shadow: 1px 1px 1px #fff;
     font-style: normal;
 }
 .showcase .showcase-text button{
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     margin-top: 20px;
-    border-radius: 20px;
-    padding: 12px;
+    border-radius: 22px;
+    padding: 10px 26px;
     border-width: thin;
     border-color: white;
     background-color: transparent;
@@ -123,18 +147,22 @@ em{
 .portofolio,
 .contact{
     margin-top: 100px;
+    height: 20rem;
 }
 .services h2 , 
 .about h2,
-.portofolio h2,
+.testimonials h2,
+.updates h2,
+.about-us h2,
 .contact h2{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 .services hr ,
-.about hr ,
-.portofolio hr,
+.about hr,
+.testimonials hr,
+.about-us hr,
 .contact hr{
-    margin: 20px auto;
+    margin: 10px auto;
 }
 .services .row{
     display: flex;
@@ -153,27 +181,89 @@ em{
     font-size: 2rem;
 }
 .bg-pink{
-    background-color: rgb(250, 202, 210);
+    background-color: rgb(241, 211, 226);
 }
-.text-blackunderline{
+.subtitle-color{
     color: #000;
-    text-decoration: underline red;
 }
+.testimonials .container{
+   margin-top: 5rem;
+   height: 8rem;
+}
+.testimonials .container .pink-container{
+    width: 50%;
+    border-radius: 10px;
+    background-color: rgb(241, 211, 226);
+    height: 10.8rem;
+    margin: auto auto;
+}
+.text-light{
+    font-weight: 5;
+}
+.grey-text{
+    color: rgb(97, 95, 95);
+}
+.contact-name, .psubscribe{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bolder;
+    margin-top: 20px;
+    padding-left: -2rem;
+}
+.updates .container p{
+    padding-left: 40px;
+    font-size: 14px;
+}
+.testimonials .container .pink-container p{
+    padding-right: 11px;
+    padding-left: 11px;
+    text-align: left;
+}
+.testimonials .container .pink-container i{
+    font-weight: 300px;;
+    color: #000;
+    text-align: left;
+}
+.about .container{
+    height: 37rem;
+}
+.text-red{
+    color: #e00220;
+}
+.text-lightred{
+    color:#e7a1aa;
+}
+.font-22{
+    font-size: 22px;
+}
+
 /* About Style */
 .about{
-    padding: 85px;
-    margin-top: 25px;
+    padding: 0px;
+    margin-top: -60px;
 }
-.about button{
+.about button, 
+.updates button,
+.contact button{
     margin-top: 20px;
-    padding: 16px;
-    background-color: red;
-    color: #fff;
+    padding: 10px 25px;
+    background-color: #e00220;
+    color: #f6e7e8;
     border: none;
-    font-size: 25px;
+    font-size: 22px;
     border-radius: 40px;
 }
-.about button:hover{
+.contact button{
+    font-size: 15px;
+    margin-top: 3rem;
+    margin-left: 16rem;
+}
+.updates button{
+    margin-top: -10px;
+    margin-left: 10rem;
+    margin-bottom: 20px;
+}
+.about button:hover,
+.updates button:hover{
     color: #000;
     background-color: #fff;
 }
@@ -197,10 +287,24 @@ em{
     align-items: center;
     margin: 0px 30px;
     margin-left: 100px;
+    padding: 10px;
+}
+.testimonials .container .pink-container .text-center a{
+    font-size: 40px;
+}
+.updates .container{
+    margin: 10rem auto;
+    height: 11rem;
+    width: 100%;
+}
+.updates .container h2{
+  padding-left: 6rem;
+  padding-top: 30px;
 }
 .coll{
     flex: 50%;
-    margin: -6px -55px;
+    margin: -6px -60px;
+    margin-right: 10px;
 }
 .portofolio .row .col img:hover{
     opacity: .8;
@@ -208,6 +312,39 @@ em{
 /* Contact Style */
 .contact p{
     margin-bottom: 40px;
+}
+
+.contact-textform{
+    margin-right: 6rem;
+    text-align: left;
+    padding-top: 3rem;
+    align-items: flex-start;
+}
+input[type=email],
+input[type=text],
+.message-field{
+    border: none;
+    color: #2f2f2f;
+    border-bottom: 2px solid #f00;
+}
+.message-field{
+    width: 21.5rem;
+    margin-top: 0rem; 
+}
+.contact-bg{
+    margin-left: -30px;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+.message-field:focus{
+  outline: none;
+}
+.adjust-icon{
+    padding-left: 10px;
+    font-size: 12px;
+}
+.contact ul li{
+  list-style: none;
 }
 .contact .row{
     display: flex;
@@ -218,12 +355,34 @@ em{
 .contact .row .col a{
     color: #2f2f2f;
 }
-.contact .row .col .mail:hover{
-    color: #FED136;
-    text-shadow: .5px .5px 1px #FED136;
-}
-/* footer Style */
 footer{
-    margin-top: 20px;
-    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 7rem;
+    margin-bottom: 0px;
+}
+footer .container{
+    height: 3rem;
+}
+footer p,
+footer p .copyright a{
+    font-weight: normal;
+    font-size: 15px;
+    color: #2f2f2f;
+}
+footer p i{
+    padding: 8px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+}
+.adjust-fb-icon{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.copyright a{
+    color: #e00220;
+}
+footer p .copyright a:hover{
+    transition: all 0.3s ease-in-out;
+    color:#f00;
 }
