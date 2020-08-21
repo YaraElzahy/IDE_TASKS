@@ -57,13 +57,12 @@ ul{
     color:#F76D37;
 }
 .showcase{
-    height: 400px;
-   /* background-image: url('https://i.pinimg.com/564x/6b/99/08/6b9908a34c518df40055fcf19617a8b7.jpg');*/
-    background-image: linear-gradient(to bottom, rgba(207, 204, 201, 0.52), rgba(76, 76, 71, 0.73)), url('https://image.freepik.com/free-photo/hot-coffee-cup-set-wooden-table_1150-10444.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    margin-bottom: 50px;
+   height: 450px;
+   background-image: url('/images/banner-images/banner-bg.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   margin-bottom: 50px;
 }
 .showcase .container{
     padding-top: -3rem;
