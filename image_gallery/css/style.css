@@ -1,0 +1,24 @@
+/* Remove all margins */
+*{
+    margin: 0;
+}
+header h1{
+    font-family: cursive;
+    font-size: 3rem;
+    border-right: 2px solid orange;
+    border-bottom: 2px solid orange;
+    width: 350px;
+    box-shadow: 4px 4px 5px #2f2f2f;
+/*  box-shadow: right bottom shadow-width shadow-color */
+/*  margin: 16px 0; */
+ /* margin: top&bottom  right&left; */
+ /* margin: top right bottom left; */
+   margin: 10px 0 42px 0;
+}
+
+.container .row .col-md-4 {
+    margin: -14px !important;
+}
+.container .row .col-md-4 img{
+    width: 100% !important;
+}
