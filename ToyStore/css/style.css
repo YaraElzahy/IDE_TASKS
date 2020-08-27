@@ -1,0 +1,344 @@
+@charset 'utf-8';
+/* Main Style */
+html , body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.7rem;
+}
+/* Navbar Style */
+.top-nav{
+    background-color: #A5C926;
+}
+.top-nav .topnav-text{
+    font-size: 11px;
+}
+.topnav-text a{
+    text-decoration-line: underline;
+}
+
+.navbar-expand-lg{
+    background-color: #fff !important;  /*#A5C926*/
+}
+.navbar-expand-lg .navbar-brand{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.navbar-nav .nav-item .nav-link{
+    padding: 0 12px;
+    font-size: 14px;
+    color: #111;
+}
+.navbar-nav .nav-item .nav-link:hover{
+    text-decoration-line: underline;
+    transition: all 0.5s ease;
+}
+
+button .navbar-toggler{
+  float: right !important;
+  justify-content: right !important;
+  align-content: flex-end !important;
+  position: relative;
+
+}
+.cart-text .cart-word{
+    color: #111;
+}
+.cart-text .cart-word:hover,
+.cart-text .item-count:hover{
+    text-decoration-line: none;
+}
+.cart-text .item-count{
+    font-size: 12px;
+    color: #fff;
+    background-color: #A5C926;
+    font-weight: 600px;
+    border-radius: 10px;
+    padding: 2px 7px;
+}
+
+.contact-info a:hover{
+    background-color: #98B923;
+    padding: 7px;
+    border-radius: 50%;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    transition: all 0.8s ease-in-out;
+}
+/* Banner Style */
+.banner .jumbotron{
+    background-image: url('../images/bg-mashead.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 32rem;
+}
+.banner .jumbotron #content{
+    padding-top : 80px;
+}
+.banner .jumbotron .title{
+    color: #A5C926;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    padding: 0px 0px 15px 0px;
+}
+.banner .jumbotron .container{
+    background-color: #fff;
+    width: 600px;
+    height: 300px;
+    margin-top: 20px;
+    border-radius: 6%;
+}
+.banner .jumbotron #content h1{
+    font-size: 32px;
+    font-family: 'Varela Round', sans-serif;
+    text-shadow: 1px 1px 1px #fff;
+    line-height: 40px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+.banner .jumbotron #content hr{
+    width: 7.5%;
+    border : 3px solid #fff;
+    margin: 25px auto;
+}
+.banner .jumbotron #content p{
+    font-style: italic;
+}
+.banner .jumbotron #content .btn-success,
+.side-to-side-sections .btn-success,
+.subscribe .btn-success{
+    background-color: #A5C926;
+    padding: 12px 27px;
+    border: none;
+    border-radius: 24px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.banner .jumbotron #content .btn-success:hover,
+.card-section .teddy-bear button:hover,
+.card-section .wooden-toy button:hover,
+.video-section a:hover,
+.side-to-side-sections .btn-success:hover,
+.subscribe .btn-success:hover{
+    box-shadow: 0px 1px 4px rgb(165, 165, 165);
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+}
+.video-section a:hover{
+    background: #A5C926;
+}
+.grey-bg{
+ background-color: #F8F8F8;
+ width: 100%;
+}
+.card-section .teddy-bear,
+.card-section .wooden-toy{
+    background-color: #FFC12C;
+    width: 580px;
+    height: 80px;
+    margin-top: 80px;
+    border-radius: 15px;
+    position: relative;
+    padding: 20px 5px;
+    flex-basis: 10px;
+}
+.card-section .wooden-toy{
+    background-color: #FB416B;
+}
+.card-section .teddy-bear img,
+.card-section .wooden-toy img{
+    transform: scale(0.37);
+    margin-top: -250px;
+    margin-left: -170px;
+}
+.card-section .wooden-toy img{
+    margin-left: 170px;
+}
+.card-section .card{
+    height: 200px;
+}
+.card-section .teddy-bear .card-body{
+    margin-top: -320px;
+    margin-left: 300px;
+    font-family: 'Varela Round', sans-serif;
+}
+.card-section .wooden-toy .card-body{
+    margin-top: -320px;
+    margin-left: 100px;
+    font-family: 'Varela Round', sans-serif;
+}
+.card-section .teddy-bear .card-title,
+.card-section .wooden-toy .card-title{
+    font-size: 28px;
+    word-spacing: 1px;
+    line-height: 28px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+.card-section .teddy-bear button,
+.card-section .wooden-toy button{
+    background-color: #fff;
+    color: #111;
+    height: 40px;
+    padding: 8px 24px;
+    border-radius: 20px;
+    font-size: 13px;
+    line-height: 24px;
+    border: none;
+}
+.card-section .wooden-toy button{
+    margin-left: 60px;
+}
+
+.shop-toys header h3{
+    font-size: 28px;
+    line-height: 28px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 400;
+}
+.shop-toys header a{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #ddd;
+    transition: border-color 0.3s ease;
+    color: #111;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.shop-toys header a:hover{
+    border-bottom-color: #A5C926;
+}
+.shop-toys .header-divider .header-greyline,
+.side-to-side-sections .header-greyline{
+    width: 100%;
+    height: 2px;
+    margin-top: 30px;
+    background-color: #e5e5e5;
+}
+.side-to-side-sections .header-greyline{
+    background-color: #F8F8F8;
+}
+
+.shop-toys .header-divider .header-greenline,
+.side-to-side-sections .header-greenline{
+    width: 136px;
+    height: 100%;
+    background-color: #A5C926;
+}
+.side-to-side-sections .header-greenline{
+    width: 80px;
+}
+.text-grey{
+    color: #999;
+}
+
+.shop-toys .card-shop-toys{
+    margin-top: 50px;
+}
+.card-shop-toys .card{
+    border: none;
+    box-shadow: 1px 2px 0px rgba(0,0,0,0.15);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+.card-shop-toys .card:hover{
+    box-shadow: 1px 0px 1px 1px rgba(19, 19, 19, 0.15);
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+.card-shop-toys h5{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.card-shop-toys button{
+    height: 24px;
+    padding: 2px 12px;
+    border-radius: 16px;
+    background-color: #a5c926;
+    color: #fff;
+    border: none;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.video-section{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://assets.website-files.com/5badda2935e11303a89a461e/5baf3d57ace69c149bb331b8_tim-gouw-165547-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.video-section .jumbotron,
+.about .jumbotron,
+.side-to-side-sections .jumbotron{
+    background: transparent;
+}
+.video-section .jumbotron h6{
+    font-size: 13;
+}
+.video-section .jumbotron h2{
+    font-size: 35px;
+}
+.video-section .jumbotron p{
+    font-size: 14px;
+}
+.video-section a {
+    border-radius: 50%;
+    background: #A5C926;
+    border: none;
+    width: 60px; height: 60px;
+    padding: 15px 20px;
+}
+.about h6,
+.insta-gallery h6{
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 600;
+    color: #A5C926;
+}
+.about h2,
+.side-to-side-sections h2,
+.insta-gallery h2{
+    font-size: 30px;
+    line-height: 36px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 500;
+}
+.side-to-side-sections img{
+    transform: scale(0.5);
+    margin-left: -300px;
+    margin-top: -250px;
+    border-radius: 6%;
+}
+.subscribe .container{
+    background-color: #fff;
+    width: 100%;
+    height: 150px;
+    border-radius: 15px;
+    box-shadow: 1px 2px 0px rgba(0,0,0,0.15);
+}
+.text-green{
+    color: #A5C926;
+}
+.subscribe .form-control{
+    padding: 12px 27px !important;
+    border-radius: 24px !important;
+    font-size: 14px !important;
+    background-color: #F8F8F8;
+    border: 1px solid;
+    border-color: #999;
+    height: 45px;
+}
+.subscribe .form-control:focus{
+  border-color: #A5C926;
+  background-color: #fff;
+}
+.subscribe h4{
+    margin-left: -140px;
+}
+
+
