@@ -241,7 +241,6 @@ footer .header-greyline{
 }
 header .container .upper-breadcrum{
     border-radius: 24px;
-    font-size: 14px;
     background-color: transparent;
     border: 1px solid;
     border-color: #e5e5e5;
@@ -254,6 +253,10 @@ header .container .upper-breadcrum{
 }
 header .container .upper-breadcrum .d-flex{
     margin-top: -15px;
+    font-size: 12px;
+}
+.breadcrum-section .container{
+    padding-top: 50px
 }
 header .upper-breadcrum .home:hover{
    color: #999;
@@ -306,11 +309,18 @@ header .upper-breadcrum .home:hover{
     transform: scale(1.1);
     transition: all 0.3s ease;
 }
+.card-shop-toys img{
+    transform: scale(0.6);
+}
 .card-shop-toys h5{
     font-family: 'Varela Round', sans-serif;
     font-size: 15px;
     line-height: 20px;
     font-weight: 400;
+    color: #111;
+}
+.card-shop-toys a:hover{
+    text-decoration-line: none;
 }
 .card-shop-toys button{
     height: 24px;
@@ -323,6 +333,10 @@ header .upper-breadcrum .home:hover{
     line-height: 20px;
     font-weight: 400;
 }
+.card-shop-toys button:hover{
+    background-color: #A5C926;
+}
+
 .video-section{
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://assets.website-files.com/5badda2935e11303a89a461e/5baf3d57ace69c149bb331b8_tim-gouw-165547-unsplash.jpg");
     background-size: cover;
