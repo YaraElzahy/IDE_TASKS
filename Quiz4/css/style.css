@@ -6,12 +6,16 @@ html , body {
 }
 /* Navbar Style */
 .top-nav{
-    background-color: #A5C926;
+    background-color: #0A1F44;
+}
+.danger-color{
+    color: #E01705;
 }
 .top-nav .topnav-text,
 footer .second-row{
     font-size: 11px;
     line-height: 16px;
+   margin-right: -500px;
 }
 .topnav-text a,
 footer .second-row a{
@@ -27,8 +31,12 @@ footer .second-row a{
     font-weight: 400;
     line-height: 28px;
 }
+.navbar-nav{
+    padding-left: 240px;
+}
 .navbar-nav .nav-item .nav-link{
     padding: 0 12px;
+    padding-left: 30px;
     font-size: 14px;
     color: #111;
 }
@@ -70,11 +78,44 @@ button .navbar-toggler{
 }
 /* Banner Style */
 .banner .jumbotron{
-    background-image: url('../images/bg-mashead.jpg');
+    background-image: url('/images/img-1.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: 36rem;
+    width: 100%;
+    background-size: 30% 70%;
+    background-position: center;
+    background-position-x: 30rem;
+    background-color: #fff;
 }
+.features .jumbotron{
+    background-image: url('/images/img-2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 36rem;
+    width: 100%;
+    background-size: 30% 60%;
+    background-position: center;
+    background-position-y: 15rem;
+    background-color: #f8f8f8;
+}
+.about .jumbotron{
+    background-image: url('/images/img-3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 36rem;
+    width: 100%;
+    background-size: 30% 60%;
+    background-position: center;
+    background-position-x: 100px;
+    
+    background-color: #fff;
+}
+
+.white-bg{
+    background-color: #fff !important;
+}
+
 .banner .jumbotron #content{
     padding-top : 80px;
 }
@@ -86,11 +127,15 @@ button .navbar-toggler{
     padding: 0px 0px 15px 0px;
 }
 .banner .jumbotron .container{
-    background-color: #fff;
+    background-color: transparent;
     width: 600px;
     height: 300px;
     margin-top: 80px;
     border-radius: 15px;
+}
+.banner .jumbotron #content{
+    margin-left: -250px;
+    margin-top: -40px;
 }
 .banner .jumbotron #content h1{
     font-size: 32px;
@@ -105,8 +150,14 @@ button .navbar-toggler{
     border : 3px solid #fff;
     margin: 25px auto;
 }
-.banner .jumbotron #content p{
-    font-style: italic;
+.banner .jumbotron #content p,
+.features p,
+.about p,
+.testimonials p,
+.pricing p,
+.FAQ p,
+.offer p{
+    font-style: normal;
 }
 .banner .jumbotron #content .btn-success,
 .side-to-side-sections .btn-success,
@@ -114,12 +165,26 @@ button .navbar-toggler{
 .gallery .btn-success,
 .delivery-info .btn-success,
 .side-to-side-contact .btn-success{
-    background-color: #A5C926;
+    background-color: #E01705;
     padding: 12px 27px;
     border: none;
     border-radius: 24px;
     font-weight: 600;
     font-size: 14px;
+}
+.topnav-text .btn-success{
+    background-color: #E01705;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+    padding: 10px 18px;
+}
+.banner .premium{
+    background-color: #0A1F44 !important;
+}
+.banner h1{
+    font-weight: bolder !important;
 }
 .banner .jumbotron #content .btn-success:hover,
 .card-section .teddy-bear button:hover,
@@ -225,8 +290,16 @@ button .navbar-toggler{
 .about-banner .more-about-us a:hover{
     border-bottom-color: #A5C926;
 }
-.about-banner p{
-    color: #999;
+
+
+.about-banner p,
+.features p,
+.about p,
+.testimonials p,
+.pricing p,
+.FAQ p,
+.offer p{
+    color: #111;
 }
 .about-banner-image img{
     border-radius: 15px !important;  
@@ -445,22 +518,28 @@ header .container .jumbotron,
     padding: 15px 20px;
 }
 .about h6,
-.insta-gallery h6,
-.about-banner h6{
-    font-size: 13px;
+.features h6,
+.about h6,
+.testimonials h6,
+.pricing h6,
+.FAQ h6,
+.offer h5{
+    font-size: 12px;
     line-height: 16px;
     font-weight: 600;
-    color: #A5C926;
+    color: #E01705;
 }
 .about h2,
-.side-to-side-sections h2,
-.insta-gallery h2,
-.about-banner h2,
-.responsive-section h2{
-    font-size: 30px;
-    line-height: 36px;
+.features h2,
+.about h2,
+.testimonials h2,
+.pricing h2,
+.FAQ h2,
+.offer h2{
+    font-size: 38px;
+    line-height: 34px;
     font-family: 'Varela Round', sans-serif;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .side-to-side-sections img{
@@ -563,6 +642,7 @@ header .container .jumbotron,
     width: 60px; height: 60px;
     padding: 13px 11px;
 }
+
 .gallery{
     margin-top: -40px;
 }
