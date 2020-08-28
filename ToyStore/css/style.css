@@ -205,7 +205,9 @@ button .navbar-toggler{
     font-family: 'Varela Round', sans-serif;
     font-weight: 400;
 }
-.shop-toys header a{
+.shop-toys header a,
+.about-banner .more-about-us a,
+.responsive-section a{
     padding-top: 2px;
     padding-bottom: 2px;
     border-bottom: 2px solid #ddd;
@@ -216,14 +218,23 @@ button .navbar-toggler{
     font-weight: 600;
     text-decoration: none;
 }
-.shop-toys header a:hover{
+.shop-toys header a:hover,
+.responsive-section a:hover,
+.about-banner .more-about-us a:hover{
     border-bottom-color: #A5C926;
+}
+.about-banner p{
+    color: #999;
+}
+.about-banner-image img{
+    border-radius: 15px !important;  
 }
 .text-e5grey{
     color: #e5e5e5;
 }
 .shop-toys .header-divider .header-greyline,
 .side-to-side-sections .header-greyline,
+.responsive-section .header-greyline,
 footer .header-greyline{
     width: 100%;
     height: 2px;
@@ -283,12 +294,14 @@ header .upper-breadcrum .home:hover{
     text-decoration-line: none;
 }
 .shop-toys .header-divider .header-greenline,
-.side-to-side-sections .header-greenline{
+.side-to-side-sections .header-greenline,
+.responsive-section .header-greenline{
     width: 136px;
     height: 100%;
     background-color: #A5C926;
 }
-.side-to-side-sections .header-greenline{
+.side-to-side-sections .header-greenline,
+.responsive-section .header-greenline{
     width: 80px;
 }
 .text-grey{
@@ -349,8 +362,16 @@ header .upper-breadcrum .home:hover{
 .side-to-side-sections .jumbotron,
 .insta-gallery .jumbotron,
 header .container .jumbotron,
-.delivery-info .jumbotron{
+.delivery-info .jumbotron,
+.about-banner .jumbotron,
+.responsive-section .jumbotron{
     background: transparent;
+}
+.video-section .jumbotron{
+    height: 450px;
+}
+.responsive-section .jumbotron{
+    padding-top: 0px;
 }
 .video-section .jumbotron h6{
     font-size: 13;
@@ -369,7 +390,8 @@ header .container .jumbotron,
     padding: 15px 20px;
 }
 .about h6,
-.insta-gallery h6{
+.insta-gallery h6,
+.about-banner h6{
     font-size: 13px;
     line-height: 16px;
     font-weight: 600;
@@ -377,17 +399,27 @@ header .container .jumbotron,
 }
 .about h2,
 .side-to-side-sections h2,
-.insta-gallery h2{
+.insta-gallery h2,
+.about-banner h2,
+.responsive-section h2{
     font-size: 30px;
     line-height: 36px;
     font-family: 'Varela Round', sans-serif;
     font-weight: 500;
 }
+
 .side-to-side-sections img{
     transform: scale(0.5);
-    margin-left: -300px;
-    margin-top: -250px;
     border-radius: 6%;
+    margin-top: -200px;
+    margin-left: 200px;
+    margin-right: -300px;
+}
+.responsive-section img{
+    transform: scale(0.5);
+    border-radius: 6%;
+    margin-left: -300px;
+    margin-top: -230px;
 }
 .subscribe .container,
 .delivery-info .container{
