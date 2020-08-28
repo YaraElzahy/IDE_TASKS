@@ -20,7 +20,8 @@ footer .second-row a{
 }
 
 .navbar-expand-lg{
-    background-color: #fff !important;  /*#A5C926*/
+    background-color: #fff !important; 
+    box-shadow: 0 0px 8px 3px rgba(0,0,0,0.1);
 }
 .navbar-expand-lg .navbar-brand{
     font-size: 20px;
@@ -59,14 +60,23 @@ button .navbar-toggler{
     border-radius: 10px;
     padding: 2px 7px;
 }
+.contact-info i{
+    position: static;
+}
 
-.contact-info a:hover{
-    background-color: #98B923;
-    padding: 7px;
+.contact-info i:hover{
     border-radius: 50%;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
-    transition: all 0.8s ease-in-out;
+    background-color: #98B923;
+    border: none;
+    width: 32px; height: 32px;
+    padding: 9px 9px;
+    border-bottom: solid 1px transparent;  
+    transition: width 2s length 2s ease-in-out;
+    margin-top: -23px;
+    margin-right: -9px;
+}
+.contact-info .fa-youtube:hover{
+    padding: 8px 8px;
 }
 /* Banner Style */
 .banner .jumbotron{
@@ -209,7 +219,8 @@ button .navbar-toggler{
 }
 .shop-toys header a,
 .about-banner .more-about-us a,
-.responsive-section a{
+.responsive-section a,
+.contact-side-section .template-link{
     padding-top: 2px;
     padding-bottom: 2px;
     border-bottom: 2px solid #ddd;
@@ -220,9 +231,13 @@ button .navbar-toggler{
     font-weight: 600;
     text-decoration: none;
 }
+.contact-side-section .address{
+    font-size: 12px;
+}
 .shop-toys header a:hover,
 .responsive-section a:hover,
-.about-banner .more-about-us a:hover{
+.about-banner .more-about-us a:hover,
+.contact-side-section .template-link:hover{
     border-bottom-color: #A5C926;
 }
 .about-banner p{
@@ -255,7 +270,8 @@ footer .header-greyline{
 header .container .upper-breadcrum,
 .side-to-side-contact input[type="text"],
 .side-to-side-contact input[type="email"],
-.side-to-side-contact textarea{
+.side-to-side-contact textarea,
+.subscribe input[type="email"]{
     border-radius: 24px;
     background-color: transparent;
     border: 1px solid;
@@ -269,20 +285,32 @@ header .container .upper-breadcrum,
 }
 .side-to-side-contact input[type="text"],
 .side-to-side-contact input[type="email"],
-.side-to-side-contact textarea{
-    border-width: 3px;
+.side-to-side-contact textarea,
+.subscribe input[type="email"]{
+    border-width: 2px;
     height: 30px;
     width: 100%;
     border-radius: 24px;
+    background-color: #f8f8f8;
+    transition: background-color 0.3s ease;
+}
+.subscribe input[type="email"]{
+    height: 45px;
 }
 .side-to-side-contact input[type="text"]:focus,
 .side-to-side-contact input[type="email"]:focus,
-.side-to-side-contact textarea:focus{
-    background-color: #fff;
-    border: none;
+.side-to-side-contact textarea:focus,
+.subscribe input[type="email"]:focus{
+    background-color: #fff !important;
+    border-color: #A5C926 !important;
+    outline: none !important;
 }
-
-
+.side-to-side-contact input[type="text"]:hover,
+.side-to-side-contact input[type="email"]:hover,
+.side-to-side-contact textarea:hover,
+.subscribe input[type="email"]:hover{
+    background-color: #fff;
+}
 .contact-side-section{
     padding-left: 100px;
 }
@@ -290,24 +318,39 @@ header .container .upper-breadcrum,
   border-radius: 50%;
   background-color: #2AA3F0;
   border: none;
-  width: 40px; height: 40px;
-  padding: 14px 14px;
+  width: 32px; height: 32px;
+  padding: 9px 9px;  
+  transition: width 2s length 2s ease-in-out;
 }
-.contact-side-section .contact-side i .fa-facebook-square{
-    background-color: #3B5998;
+.contact-side-section .contact-side .fb{
+    background-color: #3B5998 !important;
+    padding: 8px 9px;
 }
-.contact-side-section .contact-side i .fa-instagram{
-    background-color: #FB416B;
+.contact-side-section .contact-side .insta{
+    background-color: #FB416B !important;
 }
-.contact-side-section .contact-side i .fa-pinterest{
-    background-color: #BD081C;
+.contact-side-section .contact-side .pinterest{
+    background-color: #BD081C !important;
+    padding: 8px 8px;
 }
-.contact-side-section .contact-side i .fa-youtube{
-    background-color: #FC0D1C;
+.contact-side-section .contact-side .youtube{
+    background-color: #FC0D1C !important;
+    padding: 8px 8px;
 }
-
-
-
+/*
+.iframe-cover{
+    background-image: linear-gradient(to bottom, #111,#666);
+    background-color: #111;
+    background-size: cover;
+    position: relative;
+    opacity: 0.6;
+    z-index: 100;
+}
+.frame{
+    z-index: 1;
+    position: relative;
+}
+*/
 .contact-side-section .contact-side i:hover{
    transform: scale(1.1);
 } 
@@ -502,11 +545,22 @@ header .container .jumbotron,
 .text-green{
     color: #A5C926;
 }
-.side-to-side-contact form[type="label"]{
+.side-to-side-contact label{
     width: 100%;
     color: #111;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 500;
+}
+.side-to-side-contact input::placeholder,
+.side-to-side-contact textarea::placeholder,
+.subscribe input::placeholder{
+    font-size: 14px;
+    color: #888;
+}
+.contacts-info h3,
+.contacts-info h5,
+.contacts-info .template-link{
+    font-family: 'Varela Round', sans-serif;;
 }
 .side-to-side-contact .message{
     padding-top: 30px;
@@ -540,19 +594,6 @@ header .container .jumbotron,
     line-height: 24px;
 }
 
-.subscribe .form-control{
-    padding: 12px 27px !important;
-    border-radius: 24px !important;
-    font-size: 14px !important;
-    background-color: #F8F8F8;
-    border: 1px solid;
-    border-color: #999;
-    height: 45px;
-}
-.subscribe .form-control:focus{
-  border-color: #A5C926;
-  background-color: #fff;
-}
 .subscribe h4{
     margin-left: -140px;
 }
