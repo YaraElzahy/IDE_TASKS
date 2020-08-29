@@ -10,9 +10,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Html5 Demo</title>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@600&family=Roboto:ital@1&display=swap"
-        rel="stylesheet"> <!-- Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@600&family=Roboto:ital@1&display=swap"rel="stylesheet"> 
+
     <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css" />
+
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <!-- Your Stylesheet File -->
     <link rel="stylesheet" href="vendor/fontawesome/css/style.css"/>
 </head>
@@ -39,42 +41,54 @@
     <!-- showcase Area -->
     <section class="showcase text-center text-white">
         <div class="container">
-            <div class="showcase-text">
-                <h1 class="subheading">Outstanding</h1>
-                <h1 class="mashead-heading">Coffee Shop</h1>
-                <p>There are many variations of passages of Lorem ipsum 
-                    available, but<br> the mojority have suffered alternation in some form, by injected<br>humour.</p>
-                    <span class="learn-more-btn"> 
-                    <button class="bg-black text-white">Learn More</button>
-                    </span>
-                <div class="scroll-buttons">
-                <button><i class="fas fa-angle-left left"></i></button> 
-                <button><i class="fas fa-angle-right right"></i></i></button>
-            </div>
-            </div>
+            <div class="jumbotron ml-auto align-content-start">
+                <div class="row align-content-start float-left">
+                    <div class="col-md-12">
+                      <div class="showcase-text float-left">
+                        <h1 class="subheading mt-5 mr-5">Outstanding</h1>
+                        <h1 class="mashead-heading mt-3">Coffee Shop</h1>
+                        <p>There are many variations of passages of Lorem ipsum 
+                           available, but<br> the mojority have suffered alternation in some form, by injected<br>humour.</p> 
+                        <button class="learn-more-btn bg-black text-white btn">Learn More</button>
+                      </div>
+                    </div>
+                </div>
+     <div class="row align-content-center">
+        <div class="col-md-12">
+            <div style="padding-top: 19rem; padding-right: 20rem; margin-left: -14rem;" class="scroll-buttons mt-5 text-center">
+            <button><i class="fas fa-2x fa-angle-left left p-1"></i></button> 
+            <button><i class="fas fa-2x fa-angle-right right p-1"></i></i></button>
+            </div> 
+        </div>
+    </div>    
+            </div>   
         </div>
     </section>
     <!-- About Us Area -->
     <section class="about">
-        <div class="container">
+      <div class="container">
+        <div class="jumbotron">
             <div class="row">
-                <div class="read-more col">
-                  <div class="about-subtitle">About Us</div>
-                  <p>Full cleaning and housekeeping services for companies and households.<br>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.Lorem Ipsum is simply</p>
+                <div class="read-more col-md-6 col-sm-12">
+                  <div class="about-subtitle pb-4">About Us</div>
+                   <p>Full cleaning and housekeeping services for companies and households.</p>
+                   <p class="pb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.Lorem Ipsum is simply</p>
+                  <button class="read-more-btn bg-black text-white">Read More</button>  
                 </div>
-                <div class="read-more-btn"><button class="bg-black text-white">Read More</button></div>
-                <div class="about-image col"><img src="/images/portofolio-images/about-img.png"></div>
+                <div class="col-md-6 col-sm-12">
+                   <div class="about-image"><img src="/images/portofolio-images/about-img.png"></div>
+                </div>
             </div>
         </div>
+      </div>
     </section>
     <!-- Gallery Area -->
     <section class="gallery">
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h1 class="gallery-subtitle">Our Gallery</h1>
-                    <p class="gallery-text text-center">Lorem Ipsum is simply dummy text of printing typesetting ststry lorem Ipsum the industry'ndard dummy text ever since of the 1500s, when an unknown printer took a galley of type and scra make a type specimen book. It has</p>
+                    <h1 class="gallery-subtitle pb-4">Our Gallery</h1>
+                    <p class="gallery-text text-center pb-4">Lorem Ipsum is simply dummy text of printing typesetting ststry lorem Ipsum the industry'ndard dummy text ever since of the 1500s, when an unknown printer took a galley of type and scra make a type specimen book. It has</p>
                 </div>
             </div>
             <div class="gallery-images">
@@ -94,9 +108,9 @@
                 <div class="col3"><img src="images/portofolio-images/avatar-img9.png"><div class="overlay"><a href="#" class="icon"><i class="fas fa-search"></i></a></div></div>
             </div>
             </div>
-            <div class="row">
-                <div class="col">
-                  <div class="see-more-btn"><button class="bg-black text-white">See More</button></div>
+            <div class="row mx-auto">
+                <div class="col-md-12">
+                  <div class="see-more-btn mt-4"><button class="bg-black text-white">See More</button></div>
                 </div>
            </div>
         </div>
@@ -161,11 +175,11 @@
         <div class="row">
         <div class="col">
             <div class="testimonial-block">
-                <div class="test-subtitle">Testimonial</div>
+                <div class="test-subtitle pb-4">Testimonial</div>
                 <p>Eeven slightly believable. If you are going to use a passage of Lorem Ipsum, you need to</p>
             
             <div class="test-text">
-                <div class="Monila-subtitle">Monila <img src="/images/portofolio-images/right-quote-icon.png"></div>
+                <div class="Monila-subtitle pt-4">Monila <img src="/images/portofolio-images/right-quote-icon.png"></div>
                 <p class="customer_text">many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All themany variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some embarrassing hidden in the middle of text. All the</p>
             </div>
         </div>
@@ -179,42 +193,44 @@
     </div>
 </section>
 <section class="contact">
-    <div class="container">
+        <div class="jumbotron">
         <div class="row">
-            <div class="col">
+            <div class="col-md-12">
                 <h1 class="contact-subtitle text-center">Contact Us</h1>
             </div>
         </div>
         <div class="row contact-container">
-            <div class="col">
+            <div class="col-md-6 col-sm-12">
                 <div class="contact-bg">
                     <form class="contact-text" action="">
-                        <input class="adjust-text" type="text" placeholder="Name" required>
-                        <input class="adjust-text" type="email" placeholder="Email" required>
-                        <input class="adjust-text" type="text" placeholder="Phone Number" required>
-                        <textarea class="message-field" placeholder="Message" rows="5"></textarea>
+                        <input class="adjust-text name" type="text" placeholder="Name" required>
+                        <input class="adjust-text email" type="email" placeholder="Email" required>
+                        <input class="adjust-text py-4 phone-number" type="text" placeholder="Phone Number" required>
+                        <textarea class="message-field pb-4" placeholder="Message" rows="5"></textarea>
                         <button class="send-btn">SEND</button>
                     </form>
                 </div>
             </div>
-            <div class="col">
+            <div class="map col-md-6 col-sm-12">
                 <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" 
-                width="600" height="500px" frameborder="0" style="border:0; margin-top: 510px; margin-right: -200px; width: 539px"></iframe>
+                width="600" height="500px" frameborder="0" style="border:0; margin-top: 510px; margin-right: -200px; width: 100%"></iframe>
             </div>
         </div>
-        
-    </div>
+       </div>
 </section>
-<section class="info-bar">
-    <div class="container text-white">
-        <div class="info-text">
-        <div class="row">
-            <div style="margin-top: 50px;" class="col">
+
+<div class="info-bar">
+    <div class="info-text">
+        <div class="container-info">
+            <div class="jumbotron-fluid m-0 p-0">
+        <div class="row py-auto float-left text-white">
+            <div class="col-md-3 col-sm-6 pl-5">
                 <h3 class="info-subtitle">About</h3><br>
                 <p class="dummy-text">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation u</p>
             </div>
-            
-            <div style="margin-left: 75px; margin-top: 35px;" class="col">
+
+
+            <div style="margin-right: -100px;" class="col-md-3 col-sm-6 pl-5 pt-5">
                 <h3 class="info-subtitle">Menu</h3><br>
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -224,44 +240,47 @@
                     <li><a href="#">Contact Us</a></li>
                 </ul>
             </div>
-
-            <div class="col">
-                <h3 style="margin-right: 30px; margin-top: -10px; " class="info-subtitle">Useful Link</h3><br>
+            <div class="col-md-3 col-sm-6 pb-4">
+                <h3 class="info-subtitle">Useful Link</h3><br>
                 <p class="dummy-text">Adipiscing Elit, sed do Eiusmod Tempor <br>incididunt</p>
             </div>
-
-            <div class="col">
-            <h3 class="info-subtitle">Contact Us</h3><br>
-            <div class="location-text">
-                <ul>
-                   <li>
-                      <a href="#">
-                      <i class="fas fa-map-marker"></i><span class="adjust-icon">Address : Loram Ipusm</span>
-                      </a>
-                   </li>
-                   <li>
-                      <a href="#">
-                      <i class="fas fa-phone"></i><span class="adjust-icon">Call : +01 1234567890</span>
-                      </a>
-                   </li>
-                   <li>
-                      <a href="#">
-                      <i class="fas fa-envelope"></i><span class="adjust-icon">Email : demo@gmail.com</span>
-                      </a>
-                   </li>
-                </ul>
-             </div>
+            <div class="col-md-3 col-sm-6 pb-4">
+                <h3 class="info-subtitle">Contact Us</h3><br>
+                <div class="location-text">
+                    <ul>
+                       <li>
+                          <a href="#">
+                          <i class="fas fa-map-marker"></i><span class="adjust-icon">Address : Loram Ipusm</span>
+                          </a>
+                       </li>
+                       <li>
+                          <a href="#">
+                          <i class="fas fa-phone"></i><span class="adjust-icon">Call : +01 1234567890</span>
+                          </a>
+                       </li>
+                       <li>
+                          <a href="#">
+                          <i class="fas fa-envelope"></i><span class="adjust-icon">Email : demo@gmail.com</span>
+                          </a>
+                       </li>
+                    </ul>
+                 </div>
             </div>
+        </div>
       </div>
     </div>
-    </div>
-</section>
+  </div>
+</div>
 
     <footer class="text-black text-center">
-        <div class="container">
-            <p class="copyright">2020 All Rights Reserved. Design by <a href="https://html.design">Free html Templates</a></p>
+        <div class="container-fluid">
+            <p class="copyright my-auto mx-auto">2020 All Rights Reserved. Design by <a href="https://html.design">Free html Templates</a></p>
         </div>
     </footer>
 
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

@@ -44,99 +44,98 @@ ul{
     justify-content: space-between;
 }
 .navbar .nav-items .logo a{
-    font-size: 2rem;
+    font-size: 2.6rem;
     color: #fff;
-    font-weight: bold;
-}.navbar .nav-items .links ul li{
+    font-weight: bolder;
+}
+.navbar .nav-items .links ul li{
     display: inline-block;
-    padding: 0 3px;
+    padding: 14px 7.5px;
     padding-right: -20px;
+    font-size: 20px;
+    margin-top: -4px;
 }
 .navbar .nav-items .links ul li a:hover,
 .navbar .nav-items .links ul li a.active{
     color:#F76D37;
 }
 .showcase{
-   height: 450px;
+   height: 560px;
    background-image: url('/images/banner-images/banner-bg.png');
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center center;
    margin-bottom: 50px;
 }
-.showcase .container{
-    padding-top: -3rem;
-    width: 80%;
+.showcase .jumbotron,
+.about .jumbotron,
+.contact .jumbotron{
+    background-color: transparent;
 }
-.showcase .showcase-text{
-    padding-top: 140px;
-}
-.showcase .subheading{
-    font-size: 30px;
-    word-spacing: 8px;
+
+.showcase-text .subheading{
+    font-size: 4rem;
+    word-spacing: 15px;
     font-style: normal;
-    padding: 0px 0px;
-    margin-top: -2rem;
-    float: left;
+    margin-left: -150px;
     text-shadow: 1px 1px 1px #252525;
     color: #252525;
-    font-weight: normal;
+    font-weight: 350;
 }
 .showcase .showcase-text .mashead-heading{
-    font-size: 40px;
+    font-size: 4.5rem;
     font-weight: bold;
-    padding: 40px 0;
-    margin-top: -1rem;
+    padding: 10px 0;
+    margin-top: -0.6rem;
     text-align: left;
     text-shadow: 1px 1px 1px #fdfcfa;
 }
-.showcase .showcase-text p{
+.showcase-text p{
     text-align: left;
     padding-bottom: 20px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 24px;
-    font-size: 14px;
+    font-size: 18px;
 }
-.showcase .showcase-text .learn-more-btn button,
-.about .container .read-more-btn button,
+.showcase .jumbotron .learn-more-btn,
+.about .jumbotron .read-more-btn,
 .gallery .container .see-more-btn button,
 .box .row .col .read-more-btn button{
     float: left;
-    font-size: 14px;
-    margin-top: 20px;
+    font-size: 18px; 
+    font-weight: 500;
     border-radius: 1px;
-    padding: 12px 18px;
+    padding: 15px 45px;
     border: none;
     background-color: #252525;
     color: #fff;
     text-transform: uppercase;
     transition: all 0.5s ease-in-out;
 }
-.box .row .col .read-more-btn button{
+.box .row .col .read-more-btn button,
+.about .jumbotron .read-more-btn{
     background-color: #252525;
-    padding: 12px 15px;
     border: none; 
     text-transform: none;
-    margin-left: 72px;
+}
+.box .row .col .read-more-btn button{
+    margin-left: 2.8rem;
     display: none;
 }
 
-.about .container .read-more-btn button{
-    margin-top: 250px;
-    margin-left: -410px;
-}
 .about .container .about-image img{
    width: 100%;
    height: 100%;
+   transform: scale(1.1);
    margin-left: 50px;
 }
 .gallery .container .see-more-btn button{
-    margin-left: 22.5rem;
+    margin-left: 25.5rem;
 }
 
-.showcase .showcase-text .learn-more-btn button:hover,
+.showcase .jumbotron .learn-more-btn:hover,
 .showcase .container .scroll-buttons button:hover,
-.about .container .read-more-btn button:hover,
+.about .container .read-more-btn:hover,
 .gallery .container .see-more-btn button:hover{
     background-color: #F76D37;
     color: #fff;
@@ -151,15 +150,17 @@ ul{
     background-color: #fff;
 }
 .showcase .container .scroll-buttons{
-    margin-right: 110px;
+    margin-right: 0px;
+    margin-top: 500px;
 }
 .showcase .container .scroll-buttons button{
     text-align: center;
-    padding: 13px;
-    transition: all 0.3s ease-in-out;
+    padding: 2px 10px;
     color: #252525;
+    background-color: #fff;
     margin-top: 30px;
     border: none;
+    transition: color 0.6s ease-in-out 0.3s;
    
 }
 .showcase .container .scroll-buttons .right{
@@ -208,11 +209,11 @@ ul{
     position: relative;
     box-sizing: border-box;
 }
-.about .container .row .col .about-subtitle,
+.about .jumbotron .about-subtitle,
 .testimonial .container .row .col .testimonial-block .test-subtitle,
 .testimonial .container .row .col .testimonial-block .test-text .Monila-subtitle,
 .gallery .container .row .col h1.gallery-subtitle,
-.contact .container .row .col h1.contact-subtitle,
+.contact .jumbotron h1.contact-subtitle,
 .services .container .row .col h1.services-subtitle{
     text-transform: uppercase;
     font-size: 40px;
@@ -221,7 +222,7 @@ ul{
     float: left;
     width: 100%;
 }
-.contact .container .row .col h1.contact-subtitle{
+.contact .container h1.contact-subtitle{
     text-transform: none;
 }
 
@@ -246,16 +247,16 @@ ul{
     text-align: center;
 }
 
-.about .container .row .col p,
+.about .jumbotron p,
 .testimonial .container .row .col .testimonial-block p,
 .gallery .container .row .col p.gallery-text,
 .test-text p{
-    font-size: 14px;
+    font-size: 17px;
     float: left;
     color: #4c4c4b;
-    padding-top: 30px;
+    word-spacing: 1px;
+    font-weight: 350;
     width: 100%;
-    padding-bottom: 40px;
 }
 .services .container .row .col p.services-text{
     font-size: 16px;
@@ -271,7 +272,7 @@ ul{
 .gallery .container .row .col3 img{
     display: block;
     width: 100%;
-    height: 220px;
+    height: 300px;
     float: left;
     padding-right: 20px;
 }
@@ -291,8 +292,8 @@ ul{
     bottom: 0;
     left: -14px;
     right: 4px;
-    height: 220px;
-    width: 16rem;
+    height: 300px;
+    width: 21.25rem;
     opacity: 0;
     transition: 1.2s ease;
     background-color: rgb(254, 230, 220, 0.6);
@@ -321,12 +322,15 @@ ul{
     padding-bottom: 40px;
     display: block;
 }
+.about .jumbotron .read-more{
+    margin-left: -7rem;
+}
 .box:hover .row .col .read-more-btn button{
    display: block;
 }
 .box:hover h3.label,
 .box:hover p.services-box-text{
-    color: #252525;
+    color: #252525 !important;
 }
 .box:hover{
     background-color: #fff;
@@ -373,7 +377,8 @@ ul{
     float: left;
 }
 input[type="text"],
-input[type="email"]{
+input[type="email"],
+.message-field{
     background-color: #fff;
     color: #080707;
     display: block;
@@ -382,7 +387,7 @@ input[type="email"]{
     padding: 20px 40px;
     margin-left: 50px;
     border: 0px;
-    width: 95%;
+    width: 86%;
     margin-bottom: 0px;
     border-radius: 30px;
 }
@@ -391,7 +396,6 @@ input[type="email"]{
 }
 .message-field{
     color: #080707;
-    width: 95%;
     height: 150px;
     font-size: 20px;
     padding: 40px; 
@@ -407,7 +411,8 @@ input[type="email"]:focus{
 }
 .contact button{
     text-align: center;
-    padding: 16px 50px;
+    padding: 15px 63px;
+    font-size: 16px;
     background-color: #d33a11;;
     color: #fff;
     margin-top: 12.5px;
@@ -428,35 +433,36 @@ input[type="email"]:focus{
 
 .contact-text {
     position: relative;
-    width: 80%;
+    width: 100%;
     float: left;
     font-size: 40px;
+    padding-right:3rem;
     text-align: center;
     color: #f76d37;
     font-weight: bold;
 }
 .contact-container{
-    padding-top: 2rem;
-    height: 15rem;
+    height: 20rem;
+    margin-top: -30rem;
 }
 .contact-bg{
     background-image: url('/images/portofolio-images/avatar-img9.png');
-    width: 50%;
+    width: 100%;
     position: absolute;
     left: 0px;
     height: 500px;
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 }
-.info-bar .container{
+.info-bar .container-info{
     background-color: #313131;
     height: 16rem;
-    margin-top: 25rem;
+    margin-top: 33rem;
     width: 100%;
+    padding: 0 !important;
 }
 .info-text{
-    width: 80%;
-    margin-left: 70px;
+    width: 100%;
 }
 .info-subtitle{
     font-weight: bold;
@@ -481,13 +487,13 @@ footer{
     margin-top: 12px;
     margin-bottom: 0px;
 }
-footer .container{
-    height: 3rem;
+footer .container-fluid{
+    height: 1.8rem;
 }
 footer p,
 footer p a{
     font-weight: lighter;
-    font-size: 15px;
+    font-size: 18px;
     color: #252525;
 }
 footer p a:hover{
