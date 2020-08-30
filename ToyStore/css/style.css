@@ -102,6 +102,24 @@ button .navbar-toggler{
     margin-top: 80px;
     border-radius: 15px;
 }
+
+
+.mouse::before{
+    content:"";
+    width: 10px; height: 10px;
+    position: absolute;
+    top: 30px;
+    background: #333;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    opacity: 1;
+    animation: mouse 2s infinite;
+}
+@keyframes identifier{
+    from{ opacity: 1;  top: 30px;}
+    to{ opacity: 0; top: 150px;}
+}
 .banner .jumbotron #content h1{
     font-size: 32px;
     font-family: 'Varela Round', sans-serif;

@@ -1,0 +1,53 @@
+body{
+    font-family: 'Cookie', cursive;  
+}
+p{
+    font-weight: normal;
+    font-size: 1rem; /* 1rem = 16px; */
+    font-style: italic;
+    /*font-variant: small-caps;*/
+}
+.container{
+    width: 80%;
+    margin: 0 auto; /* 0-> mn fo2 w ta7t 0; auto-> centered fel x direction*/
+}
+nav{
+    background-color: rgb(49, 30, 58);
+}
+.navbar-brand{
+    color:azure;
+}
+.para3{
+    color: blueviolet;
+}
+a{
+    text-decoration: none;
+    color: rgb(236, 236, 236);
+    padding: 0px 5px;
+}
+a:hover{
+    color:white;
+}
+a:visited{
+    color: black;
+}
+a:active{
+    color:rgb(190, 138, 179);
+}
+ul{
+    list-style-type: disc;
+   /* list-style-image: url('heart.png');*/ 
+   list-style-position: inside;
+   list-style: square outside url('coffee-shop.png');
+   list-style: none;
+   float: right;
+   margin: 0 auto;
+   margin-top: -15px;
+   padding: 0px 20px;
+}
+ul li{
+    display: inline-block;
+}
+.clearfix{
+    clear: both;
+}

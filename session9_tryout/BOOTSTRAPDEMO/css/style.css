@@ -1,0 +1,58 @@
+@charset 'utf-8';
+/* Main Style */
+html , body {
+    font-family: 'Sriracha', cursive;
+    line-height: 1.7rem;
+}
+/* Navbar Style */
+.navbar-expand-md{
+    background-color: #000 !important;
+}
+.navbar-expand-md .navbar-brand{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.navbar-nav .nav-item .nav-link{
+    padding: 0 12px;
+}
+.navbar-nav .nav-item .nav-link:hover{
+    transition: border .6s;
+    border-bottom: 4px solid #129C80;
+    margin-top: 5px;
+}
+/* Banner Style */
+.banner .jumbotron{
+    background-image: url('../images/bg-mashead.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40rem;
+    border-radius : 0 0 12% 12%;
+}
+.banner .jumbotron #content{
+    padding-top : 80px;
+}
+.banner .jumbotron #content h1{
+    font-size: 3.2rem;
+    text-shadow: 1px 1px 1px #fff;
+    line-height: 4rem;
+}
+.banner .jumbotron #content hr{
+    width: 7.5%;
+    border : 3px solid #fff;
+    margin: 25px auto;
+    float: left;
+}
+.banner .jumbotron #content p{
+    font-style: italic;
+}
+.banner .jumbotron #content .btn-success{
+    background-color: #129C80;
+    padding: 16px;
+    border: none;
+    border-radius : 30%;
+}
+.banner .jumbotron #content .btn-success:hover{
+    color: #129C80;
+    background-color: #fff;
+    transition: background-color 2s ease-in-out;
+}

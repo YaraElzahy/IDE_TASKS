@@ -30,13 +30,14 @@ footer .second-row a{
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
+    margin-left: 11.8rem;
 }
 .navbar-nav{
     padding-left: 240px;
 }
 .navbar-nav .nav-item .nav-link{
     padding: 0 12px;
-    padding-left: 30px;
+    padding-left: 20px;
     font-size: 14px;
     color: #111;
 }
@@ -52,66 +53,175 @@ button .navbar-toggler{
   position: relative;
 
 }
-.cart-text .cart-word{
-    color: #111;
+footer .second-row i{
+    transition: all 0.3s ease;
 }
-.cart-text .cart-word:hover,
-.cart-text .item-count:hover{
-    text-decoration-line: none;
-}
-.cart-text .item-count{
-    font-size: 12px;
-    color: #fff;
-    background-color: #A5C926;
-    font-weight: 600px;
-    border-radius: 10px;
-    padding: 2px 7px;
-}
+ footer .second-row i:hover{
+  color: #E01705 !important;
+ }
 
-.contact-info a:hover{
-    background-color: #98B923;
-    padding: 7px;
-    border-radius: 50%;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
-    transition: all 0.8s ease-in-out;
-}
 /* Banner Style */
-.banner .jumbotron{
-    background-image: url('/images/img-1.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+.banner .jumbotron,
+.pricing .jumbotron,
+.FAQ .jumbotron,
+.discount .jumbotron{
     height: 36rem;
     width: 100%;
-    background-size: 30% 70%;
-    background-position: center;
-    background-position-x: 30rem;
     background-color: #fff;
 }
-.features .jumbotron{
-    background-image: url('/images/img-2.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 36rem;
+.discount .jumbotron{
+    height: 10rem;
+}
+.pricing .jumbotron{
+    height: 55rem;
+}
+.features h3,
+.about h5{
+    font-size: 18px;
+    font-weight: bold;
+}
+.FAQ h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+.contact .jumbotron{
+    background: linear-gradient(90deg, #f8f8f8 50%, #fff 50%);
+    height: 50rem;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.contact .contact-left{
+    margin-left: 10rem;
+}
+.contact .contact-right{
+    margin-left: 39rem;
+    margin-top: -24rem;
+}
+.contact .form-group{
+    margin-left: 5rem !important;
+}
+
+.contact input,
+.contact textarea{
+    width: 24rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background: #f8f8f8;
+}
+.contact input::placeholder,
+.contact textarea::placeholder{
+    font-family: cursive;
+}
+
+.contact .jumbotron ul li{
+    margin-left: -2.5rem;
+}
+
+.features .jumbotron,
+.testimonials .jumbotron{
+    height: 43rem;
     width: 100%;
-    background-size: 30% 60%;
-    background-position: center;
-    background-position-y: 15rem;
     background-color: #f8f8f8;
 }
-.about .jumbotron{
-    background-image: url('/images/img-3.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 36rem;
-    width: 100%;
-    background-size: 30% 60%;
-    background-position: center;
-    background-position-x: 100px;
-    
+.testimonials .card{
+    position: relative;
+    z-index: 1;
+    width: 20rem;
+}
+.testimonials .card img{
+    position: absolute;
+    z-index: 2;
+    border-radius: 50%;
+    width: 110px; height: 110px;
+    padding: 3px 3px;
+    margin-top: -4rem;
+    margin-left: 6.5rem !important;
     background-color: #fff;
+    border: 2px solid #eceaea;
+}
+.pricing .card img{
+    border-radius: 50%;
+    width: 80px; height: 80px;
+    padding: 3px 3px;
+    background-color: #fff;
+    margin-top: 10rem !important;
+}
+.pricing .card{
+    height: 40rem;
+    background-color: #E01705;
+    border-radius: 0%;
+}
+.pricing .shipping{
+    background-color: #fff;
+    border: 1px solid #E01705;
+    border-radius: 0%;
+    padding-top: 6rem !important;
+}
+.pricing .card p,
+.pricing .card h6{
+    color: #e7cbca;
+}
+.pricing .card h6{
+    font-size: 15px !important;
+}
+.pricing .card p{
+    font-size: 16px !important;
+    line-height: 25px !important;
+}
+.testimonials .left-quote,
+.pricing .left-quote{
+    position: absolute;
+    z-index: 2;
+    border-radius: 50%;
+    width: 33px; height: 33px;
+    background-color: #E01705;
+    padding: 3px 3px;
+    color: #fff;
+    margin-left: -1rem;
+}
+.pricing .card-title{
+    font-size: 16px !important;
+    font-weight: bold !important;
+}
+.pricing .left-quote{
+    border: 1px solid #fff;
+    margin-top: 11rem;
+    margin-left: -4rem;
+}
+.testimonials .card-body{
+    margin-top: 2rem !important;
+}
+.testimonials .card-title{
+    font-size: 17px;
+    font-weight: 550 !important;
+    word-spacing: 2px !important;
+}
+.testimonials .card-subtitle {
+   font-size: 14px !important;
 }
 
+.testimonials .rating,
+.pricing .rating{
+    color: gold;
+}
+
+.features img{
+    transform: scale(0.45);
+    margin-left: -8rem;
+    margin-top: -11rem;
+}
+.about .jumbotron{
+    height: 50rem;
+    width: 100%;
+}
+.about .watch-img{
+    transform: scale(0.35);
+    margin-top: -28rem;
+    margin-left: -2.4rem;
+}
+.about .cards-container{
+    margin-top: 2rem;
+}
 .white-bg{
     background-color: #fff !important;
 }
@@ -119,12 +229,10 @@ button .navbar-toggler{
 .banner .jumbotron #content{
     padding-top : 80px;
 }
-.banner .jumbotron .title{
-    color: #A5C926;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 16px;
-    padding: 0px 0px 15px 0px;
+.banner img{
+    transform: scale(0.45);
+    margin-top: -550px;
+    margin-left: 70px;
 }
 .banner .jumbotron .container{
     background-color: transparent;
@@ -134,8 +242,9 @@ button .navbar-toggler{
     border-radius: 15px;
 }
 .banner .jumbotron #content{
-    margin-left: -250px;
+    text-align: left;
     margin-top: -40px;
+    margin-left: -5rem;
 }
 .banner .jumbotron #content h1{
     font-size: 32px;
@@ -150,27 +259,85 @@ button .navbar-toggler{
     border : 3px solid #fff;
     margin: 25px auto;
 }
+
 .banner .jumbotron #content p,
 .features p,
 .about p,
 .testimonials p,
 .pricing p,
 .FAQ p,
-.offer p{
+.discount p{
     font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #555;
+}
+.FAQ .left-section{
+    padding-left: 8rem;
 }
 .banner .jumbotron #content .btn-success,
-.side-to-side-sections .btn-success,
-.subscribe .btn-success,
-.gallery .btn-success,
-.delivery-info .btn-success,
-.side-to-side-contact .btn-success{
+.pricing .btn-success,
+.pricing .offer-percent,
+.contact .btn-success,
+.discount .btn-success{
     background-color: #E01705;
     padding: 12px 27px;
     border: none;
     border-radius: 24px;
     font-weight: 600;
     font-size: 14px;
+    transition: all 0.3s ease;
+}
+.contact input:focus,
+.contact textarea:focus{
+    outline: none;
+    border: 1px solid #E01705;
+}
+.contact input:hover,
+.contact textarea:hover{
+  background: #fff;
+}
+.contact .btn-success{
+    margin-left: -8rem;
+    padding: 12px 140px;
+}
+
+
+.pricing .shipping .card-title{
+    font-size: 20px !important;
+}
+.pricing .offer-percent{
+    padding: 2px 16px;
+    color: #fff;
+}
+.pricing .offer{
+    margin-left: 13rem;
+}
+.pricing .offer .old-price{
+    color: #666;
+    text-decoration-line: line-through;
+    font-size: 28px;
+    margin-top: 3px;
+}
+
+.pricing .shipping .card-subtitle{
+    font-size: 14px !important;
+    font-weight: 570 !important;
+    word-spacing: 0.5px !important;
+}
+.pricing .offer-details .fa-check-circle{
+    color: rgb(20, 218, 79) !important;
+}
+.pricing .btn-success{
+    padding: 12px 82px !important; 
+    transition: all 0.3s ease;
+}
+.pricing .btn-success:hover,
+.contact .btn-success:hover,
+.discount .btn-success:hover{
+    background-color: #fff;
+    border: 1px solid #E01705;
+    color: #E01705;
 }
 .topnav-text .btn-success{
     background-color: #E01705;
@@ -292,15 +459,6 @@ button .navbar-toggler{
 }
 
 
-.about-banner p,
-.features p,
-.about p,
-.testimonials p,
-.pricing p,
-.FAQ p,
-.offer p{
-    color: #111;
-}
 .about-banner-image img{
     border-radius: 15px !important;  
 }
@@ -321,6 +479,9 @@ footer .header-greyline{
     background-color: #F8F8F8;
     margin-top: -40px;
     opacity: 0.3;
+}
+footer .contact-info a:hover{
+   text-decoration-line: underline;
 }
 .side-to-side-sections .header-greyline{
     background-color: #F8F8F8;
@@ -359,6 +520,29 @@ header .container .upper-breadcrum,
 .contact-side-section{
     padding-left: 100px;
 }
+.features i{
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #E01705;
+  width: 40px; height: 40px;
+  padding: 11px 11px;
+  transition: all 0.3s ease;
+}
+.about .card i{
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #E01705;
+    width: 40px; height: 40px;
+    padding: 11px 11px !important;  
+    margin-top: 18px;
+    transition: all 0.3s ease;
+}
+.features .fa-map-marker-alt{
+    padding: 12px 12px !important;
+}
+.features .fa-mobile{
+    padding: 14px 14px;
+}
 .contact-side-section .contact-side i{
   border-radius: 50%;
   background-color: #2AA3F0;
@@ -378,7 +562,11 @@ header .container .upper-breadcrum,
 .contact-side-section .contact-side i .fa-youtube{
     background-color: #FC0D1C;
 }
-
+.features i:hover,
+.about .card i:hover{
+   background-color: #E01705;
+   color: #fff;
+}
 
 
 .contact-side-section .contact-side i:hover{
@@ -473,9 +661,7 @@ header .upper-breadcrum .home:hover{
     line-height: 20px;
     font-weight: 400;
 }
-.card-shop-toys button:hover{
-    background-color: #A5C926;
-}
+
 
 .video-section{
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://assets.website-files.com/5badda2935e11303a89a461e/5baf3d57ace69c149bb331b8_tim-gouw-165547-unsplash.jpg");
@@ -484,50 +670,24 @@ header .upper-breadcrum .home:hover{
     background-attachment: fixed;
     background-position: center;
 }
-.video-section .jumbotron,
+
 .about .jumbotron,
-.side-to-side-sections .jumbotron,
-.insta-gallery .jumbotron,
-header .container .jumbotron,
-.delivery-info .jumbotron,
 .about-banner .jumbotron,
-.responsive-section .jumbotron,
 .contacts-info .jumbotron{
     background: transparent;
 }
-.video-section .jumbotron{
-    height: 450px;
-}
-.responsive-section .jumbotron{
-    padding-top: 0px;
-}
-.video-section .jumbotron h6{
-    font-size: 13;
-}
-.video-section .jumbotron h2{
-    font-size: 35px;
-}
-.video-section .jumbotron p{
-    font-size: 14px;
-}
-.video-section a {
-    border-radius: 50%;
-    background: #A5C926;
-    border: none;
-    width: 60px; height: 60px;
-    padding: 15px 20px;
-}
+
 .about h6,
 .features h6,
 .about h6,
 .testimonials h6,
 .pricing h6,
 .FAQ h6,
-.offer h5{
+.discount h6{
     font-size: 12px;
-    line-height: 16px;
+    line-height: 14px;
     font-weight: 600;
-    color: #E01705;
+    color: #E01705;   
 }
 .about h2,
 .features h2,
@@ -535,11 +695,15 @@ header .container .jumbotron,
 .testimonials h2,
 .pricing h2,
 .FAQ h2,
-.offer h2{
+.discount h2{
     font-size: 38px;
     line-height: 34px;
     font-family: 'Varela Round', sans-serif;
     font-weight: bold;
+    line-height: 45px;
+}
+.pricing  .shipping .new-price{
+    font-size: 55px !important;
 }
 
 .side-to-side-sections img{
@@ -656,7 +820,7 @@ header .container .jumbotron,
 }
 footer{
     margin-top: 150px;
-    background-color: #A5C926;
+    background-color: #0A1F44;
 }
 
 

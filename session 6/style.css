@@ -1,0 +1,40 @@
+input[type=text]{
+    border: none;
+    color: #2f2f2f;
+    border-bottom: 2px solid #f00;
+
+}
+input[type=password],
+input[type=search]{
+    border: none;
+    border-bottom: 2px solid #f00;
+}
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=search]:focus{
+  outline: none;
+  color: #00f;
+}
+.tooltip{
+    position: relative;
+    display: inline-block;
+    background-color: #000;
+    color:#fff;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 100px;
+}
+.tooltip .text{
+    visibility: hidden;
+    width: 100px;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    border-radius: 5px;
+    padding: 4px 0;
+    position: absolute;
+    z-index: 5;
+}
+.tooltip:hover .text{
+    visibility: visible;
+}
