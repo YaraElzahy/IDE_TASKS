@@ -84,6 +84,8 @@ button .navbar-toggler{
     background-size: cover;
     background-repeat: no-repeat;
     height: 36rem;
+    position: relative;
+    z-index: 1;
 }
 .banner .jumbotron #content{
     padding-top : 80px;
@@ -102,24 +104,118 @@ button .navbar-toggler{
     margin-top: 80px;
     border-radius: 15px;
 }
+.side-to-side-sections .availableForFree hr{
+    display: none;
+}
+@media(max-width: 580px){
+    .banner .jumbotron .container{
+        width: 400px;
+    }
+}
+@media(min-width: 780px) and (max-width: 1200px){
+    .side-to-side-sections .kids-image{
+        transform: scale(0.85);
+        padding-left: 3rem !important;
+        margin-right: -2rem !important;
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px){
+  .subscribe .container h4,
+  .subscribe .container input{
+     margin-left: -4rem !important;
+  }
+  .subscribe .container input{
+      width: 16rem !important;
+  }
+}
 
 
-.mouse::before{
-    content:"";
-    width: 10px; height: 10px;
+@media(max-width: 992px){
+    .side-to-side-sections .availableForFree{
+        order: 2;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        margin-top: -7rem;
+    }
+    .side-to-side-sections .kids-image{
+        order: 1;
+        justify-content: center;
+        transform: scale(0.9);
+        align-items: center;
+        margin-left: -3rem !important;
+    }
+    .side-to-side-sections .availableForFree hr{
+        display: block;
+        width: 80px;
+        border: 2px solid #A5C926;   
+        background-color: #A5C926;
+    }
+    .side-to-side-sections .availableForFree .header-greenline{
+        display: none;
+    }
+}
+@media(min-width: 576px) and (max-width: 780px){
+    .side-to-side-sections .kids-image{
+        transform: scale(1);
+        margin-left: -3rem !important;
+    }
+}
+.banner #mouse-section{
     position: absolute;
-    top: 30px;
-    background: #333;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 50%;
     opacity: 1;
-    animation: mouse 2s infinite;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 2;
+    width: 64px;
+    height: 64px;
+    margin-right: auto;
+    margin-bottom: -32px;
+    margin-left: auto;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
 }
-@keyframes identifier{
-    from{ opacity: 1;  top: 30px;}
-    to{ opacity: 0; top: 150px;}
+.mouse-icon{
+    display: flex;
+    width: 20px;
+    height: 30px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    align-items: flex-start;
+    border: 2px solid #bbb;
+    border-radius: 12px;
+    margin-left: 1.4rem;
+    margin-top: 1rem !important;
 }
+.mouse-wheel{
+    width: 4px;
+    height: 4px;
+    margin-top: 6px;
+    border-radius: 50%;
+    background-color: #bbb;
+    position: relative;
+    animation: mouse-wheel 2s infinite ease-out;
+}
+@keyframes mouse-wheel{
+    from{opacity: 1; top: 0px;}
+    to{opacity: 0; top: 10px;}
+}
+
+@media(max-width: 786px){
+    #mouse-section{
+       display: none;
+    }
+} 
 .banner .jumbotron #content h1{
     font-size: 32px;
     font-family: 'Varela Round', sans-serif;
@@ -170,6 +266,9 @@ button .navbar-toggler{
  background-color: #F8F8F8;
  width: 100%;
 }
+.card-section .row{
+    margin-left: -3rem !important;
+}
 .card-section .teddy-bear,
 .card-section .wooden-toy{
     background-color: #FFC12C;
@@ -183,6 +282,13 @@ button .navbar-toggler{
 }
 .card-section .wooden-toy{
     background-color: #FB416B;
+    margin-left: -2rem !important;
+}
+@media (max-width: 780px){
+   .card-section .wooden-toy,
+   .card-section .teddy-bear{
+     width: 570px;
+   }
 }
 .card-section .teddy-bear img,
 .card-section .wooden-toy img{
@@ -437,6 +543,57 @@ header .upper-breadcrum .home:hover{
     transform: scale(1.1);
     transition: all 0.3s ease;
 }
+@media(max-width: 1200px){
+    .card-section .wooden-toy,
+   .card-section .teddy-bear{
+       transform: scale(0.84);
+     justify-content: center;
+     align-items: center;
+   }
+   .card-section .wooden-toy .card-img{
+    margin-right: -4rem !important;
+}
+   .card-section .wooden-toy .card-body{
+    margin-left: -11rem !important;
+}
+}
+@media (max-width: 992px){
+    .card-shop-toys .card{
+        padding-bottom: 1rem !important;
+    }
+    .card-section .wooden-toy,
+    .card-section .teddy-bear{
+     justify-content: center;
+     align-items: center;
+   }
+
+    .card-shop-toys .card{
+        transform: scaleY(0.9);
+        justify-content: center;
+        align-items: center;
+    }
+    .card-shop-toys .card:hover{
+        transform: scaleY(0.9);
+    }
+}
+@media(max-width: 576px){
+   .card-section .wooden-toy,
+   .card-section .teddy-bear{
+     transform: scale(0.8);
+     justify-content: center;
+     align-items: center;
+   }
+   .card-section .wooden-toy .card-img{
+       margin-right: -4rem !important;
+   }
+   .card-section .wooden-toy .card-body{
+       margin-left: -11rem !important;
+   }
+   .card-section{
+    margin-left: -2rem;
+   }
+}
+
 .card-shop-toys img{
     transform: scale(0.6);
 }
@@ -545,6 +702,30 @@ header .container .jumbotron,
     height: 150px;
     border-radius: 15px;
     box-shadow: 1px 2px 0px rgba(0,0,0,0.15);
+}
+@media(max-width: 992px){
+    .subscribe .container{
+        height: 400px !important;
+        text-align: center !important;
+        justify-content: center !important;
+        width: 80% !important;
+    }
+    .subscribe .container h4{
+        margin-left: 2rem;
+        padding-top: 1rem;
+    }
+    .subscribe .container i{
+        margin-left: 0rem !important;
+    }
+    .subscribe .container button,
+    .subscribe .container input{
+        margin-top: 2rem !important;
+        width: 70%;
+    }
+    .subscribe .container button{
+        margin-left: 2rem !important; 
+        width: 67% !important;
+    }
 }
 .delivery-info .container,
 .contacts-info .container{
