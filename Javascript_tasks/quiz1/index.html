@@ -18,6 +18,7 @@
 
     <button id="do-all-operations" onclick="HandleAllOperations()"> + - * /</button>
     <h3>Result: <span id="result">0</span></h3>
+            <h3><span id="addition"></span></h3>
             <h3><span id="subtraction"></span></h3>       
             <h3><span id="multiplication"></span></h3>   
             <h3><span id="division"></span></h3>   
@@ -57,6 +58,7 @@
     }
     function printResult(result){
         document.getElementById('result').innerHTML = '<p style="color: blue">' + result + '</p>';
+        document.getElementById('addition').innerHTML = " ";
         document.getElementById('subtraction').innerHTML = " ";
         document.getElementById('multiplication').innerHTML = " ";
         document.getElementById('division').innerHTML = " ";
@@ -64,10 +66,16 @@
     function HandleAllOperations(){
         var n1 = parseFloat(document.getElementById('firstNumber').value),
             n2 = parseFloat(document.getElementById('secondNumber').value);
-            document.getElementById('result').innerHTML = n1 + n2;
-            document.getElementById('subtraction').innerHTML = n1 - n2;
-            document.getElementById('multiplication').innerHTML = n1 * n2;
-            document.getElementById('division').innerHTML = n1 / n2;
+            let str1 = n1 + ' + ' + n2 + ' = ',
+                str2 = n1 + ' - ' + n2 + ' = ',
+                str3 = n1 + ' * ' + n2 + ' = ',
+                str4 = n1 + ' / ' + n2 + ' = ';
+            document.getElementById('result').innerHTML = " ";
+            document.getElementById('addition').innerHTML = str1 + parseFloat(n1 + n2);
+            document.getElementById('subtraction').innerHTML = str2 + parseFloat(n1 - n2);
+            document.getElementById('multiplication').innerHTML = str3 + parseFloat(n1 * n2);
+            document.getElementById('division').innerHTML = str4 + parseFloat(n1 / n2);
+
     }
 
     </script>
