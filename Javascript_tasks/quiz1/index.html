@@ -10,13 +10,13 @@
 
     <input type="number" id="firstNumber">
     <input type="number" id="secondNumber"> <br>
-    <button id = "add" onClick="HandleSum()">Add</button>
-    <button id = "subtract" onclick="HandleSubtraction()">Subtract</button> <br>
+    <button id = "add" onClick="handleSum()">Add</button>
+    <button id = "subtract" onclick="handleSubtraction()">Subtract</button> <br>
 
-    <button id="Multiply" onClick="HandleMultiplication()">Multiply</button>
-    <button id="Divide" onClick="HandleDivision()">Divide</button> 
+    <button id="Multiply" onClick="handleMultiplication()">Multiply</button>
+    <button id="Divide" onClick="handleDivision()">Divide</button> 
 
-    <button id="do-all-operations" onclick="HandleAllOperations()"> + - * /</button>
+    <button id="do-all-operations" onclick="handleAllOperations()"> + - * /</button>
     <h3>Result: <span id="result">0</span></h3>
             <h3><span id="addition"></span></h3>
             <h3><span id="subtraction"></span></h3>       
@@ -24,22 +24,22 @@
             <h3><span id="division"></span></h3>   
    
     <script>
-    function HandleSum(){
+    function handleSum(){
         var n1 = parseFloat(document.getElementById('firstNumber').value),
             n2 = parseFloat(document.getElementById('secondNumber').value);
             printResult(add(n1,n2));
     }
-    function HandleSubtraction(){
+    function handleSubtraction(){
         var n1 = parseFloat(document.getElementById('firstNumber').value),
             n2 = parseFloat(document.getElementById('secondNumber').value);
             printResult(subtract(n1,n2));
     }
-    function HandleDivision(){
+    function handleDivision(){
         var n1 = parseFloat(document.getElementById('firstNumber').value),
             n2 = parseFloat(document.getElementById('secondNumber').value);
             printResult(divide(n1,n2));
     }
-    function HandleMultiplication(){
+    function handleMultiplication(){
         var n1 = parseFloat(document.getElementById('firstNumber').value),
             n2 = parseFloat(document.getElementById('secondNumber').value);
             printResult(multiply(n1,n2));
@@ -63,7 +63,7 @@
         document.getElementById('multiplication').innerHTML = " ";
         document.getElementById('division').innerHTML = " ";
     }
-    function HandleAllOperations(){
+    function handleAllOperations(){
         var n1 = parseFloat(document.getElementById('firstNumber').value),
             n2 = parseFloat(document.getElementById('secondNumber').value);
             let str1 = n1 + ' + ' + n2 + ' = ',
