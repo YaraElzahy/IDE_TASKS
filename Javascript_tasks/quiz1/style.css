@@ -1,0 +1,55 @@
+@charset 'utf-8';
+html , body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.7rem;
+    position: relative;
+}
+#add, #subtract, #Divide, #Multiply, #do-all-operations{
+    background-color: rgb(98, 11, 98);
+    color: #fff;
+    padding: 12px 12px;
+    border: none;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 3px;
+    width: 80px;  height: 60px;
+    text-align: center;  
+}
+#add:focus, #subtract:focus, #Divide:focus, #Multiply:focus, #do-all-operations:focus{
+    outline: none;
+}
+#add:hover, #subtract:hover, #Divide:hover, #Multiply:hover, #do-all-operations:hover{
+    background: #f8f8f8;
+    border: 2px solid rgb(98, 11, 98);
+    color: rgb(98, 11, 98);
+}
+#add:active, #subtract:active, #Divide:active, #Multiply:active, #do-all-operations:active{
+    background-color: rgb(107, 219, 201);
+    color: #fff;
+    border: none;
+}
+#do-all-operations{
+    margin-bottom: 1rem;
+    display: inline-block;
+    position: absolute;
+    margin-top: -1.6rem;
+}
+input[type="number"]{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-width: 1px;
+    height: 30px;
+    width: 85px;
+    border-radius: 10px;
+    border: 1px solid #aaaa;
+    background-color: #f8f8f8;
+    transition: background-color 0.3s ease; 
+}
+input[type="number"]:focus{
+    border: 2px solid rgb(126, 17, 126);
+    outline: none;
+}
+input[type="number"]:hover{
+    background: #fff;
+}
