@@ -56,6 +56,9 @@
     }
     function printResult(result){
         document.getElementById('result').innerHTML = '<p style="color: blue">' + result + '</p>';
+        document.getElementById('subtraction').innerHTML = " ";
+        document.getElementById('multiplication').innerHTML = " ";
+        document.getElementById('division').innerHTML = " ";
     }
     function HandleAllOperations(){
         var n1 = parseFloat(document.getElementById('firstNumber').value),
