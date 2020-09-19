@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center; font-weight: bold;">Conditional branching: if, '?'</h1>
+    <!-- Question 1: if (a string with zero)-->
+    <h3 style="text-align: left; font-weight:550;">Question 1: <span style="font-style:italic; font-weight: 200px;">Answer: Yes, alert will be shown given the fact that "0" is not an empty string.</span></h3><br>
+    
+    <!--Question 2: The name of JavaScript -->
+    <h3 style="text-align: left; font-weight:550;">Question 2: <span style="font-style:italic; font-weight: 200px;"><button id = "show-alert1">Show Alert</button></span></h3><br>
+    
+    <!--Question 3: Show the sign -->
+    <h3 style="text-align: left; font-weight:550;">Question 3: <span style="font-style:italic; font-weight: 200px;"><button id = "show-alert2">Show Alert</button></span></h3><br>
+
+    <!--Question 4:  Rewrite 'if' into '?'-->
+    <h3 style="text-align: left; font-weight:550;">Question 4: <span style="font-style:italic; font-weight: 200px;"><input type="text" id = "a"> <input type="text" id = "b"> <button id = "reveal-result">Show Result</button></span></h3>
+    <h3>Result: <span id = "result"></span></h3><br>
+    
+    <!--Question 5:  Rewrite 'if..else' into '?'-->
+    <h3 style="text-align: left; font-weight:550;">Question 5: <span style="font-style:italic; font-weight: 200px;"><input type="text" id = "position"> <button id = "reveal-result2">Show Result</button></span></h3>
+    <h3>Output: <span id = "output"></span></h3><br><br>
+
+    <h1 style="text-align: center; font-weight: bold;">Logical operators</h1>
+
+    <!--Question 1: What's the result of OR? -->
+    <h3 style="text-align: left; font-weight:550;">Question 1: <span style="font-style:italic; font-weight: 200px;">Answer: 2, since 2 is the first and only true value.</span></h3><br>
+
+     <!--Question 2: What's the result of OR? -->
+     <h3 style="text-align: left; font-weight:550;">Question 2: <span style="font-style:italic; font-weight: 200px;">Answer: 1, then 2.</span></h3><br>
+    
+     <!--Question 3: What is the result of AND? -->
+     <h3 style="text-align: left; font-weight:550;">Question 3: <span style="font-style:italic; font-weight: 200px;">Answer: null, since null is the first and only false value.</span></h3><br>
+     
+     <!--Question 4: What is the result of AND'ed alerts? -->
+     <h3 style="text-align: left; font-weight:550;">Question 4: <span style="font-style:italic; font-weight: 200px;">Answer: 1 (resulted from alert(1)), then undefined resulted from (alert(1 && undefined)).</span></h3><br>
+     
+     <!--Question 5: The result of OR AND OR -->
+     <h3 style="text-align: left; font-weight:550;">Question 5: <span style="font-style:italic; font-weight: 200px;">Answer: 3, since null || 3 || 4 = 3, which is the first true value.</span></h3><br>
+     
+     <!--Question 6: Check the range between -->
+     <h3 style="text-align: left; font-weight:550;">Question 6: <span style="font-style:italic; font-weight: 200px;">Answer:</span></h3><br>
+        <p> let age; <br>
+            if (age >= 14 && age <= 90) {console.log('age is in range');}<br>
+            else {console.log('age is out of range');} 
+        </p><br>
+    <!--Question 7: Check the range outside -->
+    <h3 style="text-align: left; font-weight:550;">Question 7: <span style="font-style:italic; font-weight: 200px;">Answer:</span></h3><br>
+        <p> varient 1: <br> let age; <br>
+            if (!(age >= 14 && age <= 90)) {console.log('age is in range');}<br>
+            else {console.log('age is out of range');} 
+        </p>
+ 
+        <p> varient 2: <br> let age; <br>
+            if ((age < 14 || age > 90)) {console.log('age is in range');}<br>
+            else {console.log('age is out of range');} 
+        </p><br>
+     <!--Question 8: A question about "if" -->
+     <h3 style="text-align: left; font-weight:550;">Question 8: <br> Which of these alerts are going to execute?<br>
+
+        What will the results of the expressions be inside if(...)?<br>
+        
+      line 1:  if (-1 || 0) alert( 'first' );<br>
+      line 2:  if (-1 && 0) alert( 'second' );<br>
+      line 3:  if (null || -1 && 1) alert( 'third' );<br>
+      <span style="font-style:italic; font-weight: 200px;">
+      Answer:</span></h3><br>
+      <p>line 1: executes first, -1 || 0 = -1 (true), and thus 'first' appears in alerts<br>
+         line 2: doesn't execute, -1 && 0 = 0 (false)<br>
+         line 3: executes second, && has higher priority than ||, and thus -1 && 1 = 1, then null || 1 = 1 (true)<br>     
+      </p>
+    <!--Question 9: Check the login -->
+    <h3 style="text-align: left; font-weight:550;">Question 9: <span style="font-style:italic; font-weight: 200px;"><button id = "execute">Execute</button></span></h3><br>
+    
+
+    <h1 style="text-align: center; font-weight: bold;">Logical operators</h1>
+
+    <!--Question 1: Rewrite the "switch" into an "if" -->
+    <h3 style="text-align: left; font-weight:550;">Question 1: See script tag in code.<span style="font-style:italic; font-weight: 200px;"></span></h3><br>
+
+    <script>
+
+    let browser;
+    if(browser == 'Edge') 
+      alert( "You've got the Edge!" );
+    else if (browser == 'Chrome' || browser == 'Firefox' || browser == 'Safari' || browser == 'Opera')
+      alert( 'Okay we support these browsers too' );
+    else  alert( 'We hope that this page looks ok!' );
+
+    </script>
+
+     <!--Question 2: Rewrite "if" into "switch" -->
+     <h3 style="text-align: left; font-weight:550;">Question 2: See script tag in code.<span style="font-style:italic; font-weight: 200px;"></span></h3><br>
+     <script>
+         let a = +prompt('a?', '');
+
+       let a = +prompt('a?', '');
+         switch(a){
+             case 0:   
+                alert( 0 );
+                break;   
+             case 1:
+                alert( 1 );
+                break;  
+             case 2:
+             case 3:
+                alert( '2,3' );
+                break;  
+         }
+        
+     </script>
+    <script src="js/script.js"></script>
+</body>
+</html>
