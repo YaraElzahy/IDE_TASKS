@@ -1,0 +1,36 @@
+@charset 'utf-8';
+html , body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.7rem;
+    position: relative;
+}
+.container{
+    text-align: center;
+    align-content: center;
+    margin-top: 10rem;
+}
+#btn-item1, #btn-item2, #btn-item3, #btn-item4{
+    background-color: rgb(98, 11, 98);
+    color: #fff;
+    padding: 12px 12px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 3px;
+    width: 80px;  height: 50px;
+    text-align: center;  
+}
+#btn-item1:focus, #btn-item2:focus, #btn-item3:focus, #btn-item4:focus{
+    outline: none;
+}
+#btn-item1:hover, #btn-item2:hover, #btn-item3:hover, #btn-item4:hover{
+    background: #f8f8f8;
+    border: 2px solid rgb(98, 11, 98);
+    color: rgb(98, 11, 98);
+}
+#btn-item1:active, #btn-item2:active, #btn-item3:active, #btn-item4:active{
+    background-color: rgb(107, 219, 201);
+    color: #fff;
+    border: none;
+}
