@@ -1,0 +1,25 @@
+.green{
+    background-color: rgb(130, 181, 163);
+    padding: 5px;
+}
+.purple{
+    background-color: rgb(167, 139, 170);
+    padding: 5px;
+    margin-top: -10px;
+}
+button{
+    padding: 12px 15px;
+    border-radius: 5px;
+    background-color: #111;
+    color: #f8f8f8;
+    font-size: 16px;
+    font-family: cursive;
+    border: none;
+}
+button:hover{
+    background-color: rgb(12, 175, 39);
+    color: #111;
+}
+p{
+    margin-left: 10px;
+}
